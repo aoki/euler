@@ -11,6 +11,7 @@ public class Problem003 {
     return dividend;
   }
 
+  // for Problem 4
   public static ArrayList<Double> getPrimes( double dividend ) {
     ArrayList<Double> primes = new ArrayList<Double>();
     double max = Math.sqrt( dividend );
