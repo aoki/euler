@@ -2,7 +2,7 @@ import java.util.ArrayList;
 
 public class Problem005 {
 
-  public static void compute(int max) {
+  public static int compute(int max) {
     ArrayList<Double> factors = new ArrayList<Double>();
     ArrayList<Double> primes;
     
@@ -12,14 +12,14 @@ public class Problem005 {
       factors.addAll(primes);
     }
     
-    double ans = 1;
+    int ans = 1;
     for (double tmp: factors) ans *= tmp;
 
-    System.out.println("Answer is " + String.format("%09f", ans));
+    return ans;
   }
 
   public static void main(String[] args) {
-    compute(20);
+    System.out.println("Answer is " + compute(20) + ".");
   }
 
 }

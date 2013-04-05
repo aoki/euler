@@ -2,7 +2,7 @@ import java.util.ArrayList;
 
 public class Problem004 {
 
-  public static void compute(int num) {
+  public static int compute(int num) {
     for (;num >= 100*100; num--) {
       // Check Kaibun
       if (! checkKaibun(String.valueOf(num))) continue;
@@ -16,11 +16,9 @@ public class Problem004 {
       }
 
       // Check answer
-      if (isAnswer(primes)) {
-        System.out.println("Answer is " + num);
-        break;
-      }
+      if (isAnswer(primes)) return num;
     }
+    return -1;
   }
 
   public static boolean isAnswer(ArrayList<Double> primes) {
@@ -52,7 +50,7 @@ public class Problem004 {
   }
 
   public static void main(String[] args) {
-    Problem004.compute(999*999);
+    System.out.println("Answer is " + compute(999*999) + ".");
   }
 
 }
