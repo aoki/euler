@@ -6,3 +6,7 @@
 *.jar
 *.war
 *.ear
+
+# IntelliJ IDEA
+/.idea
+/*.iml
