@@ -1,3 +1,5 @@
+package euler;
+
 public class Problem008 {
 
   public static int compute(String seq, int window) {

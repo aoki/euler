@@ -1,3 +1,5 @@
+package euler;
+
 import java.util.ArrayList;
 
 public class Problem004 {

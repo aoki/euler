@@ -1,3 +1,5 @@
+package euler;
+
 public class Problem006 {
 
   public static int compute(int max) {
