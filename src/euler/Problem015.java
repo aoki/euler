@@ -17,9 +17,9 @@ public class Problem015 {
     // ただし，x方向，y方向ともに順序は関係ないので，重複分を割る．
     BigInteger a = computePermutation(BigInteger.valueOf(x+y));
     BigInteger b = computePermutation(BigInteger.valueOf(x));
-    //if ( x == y) {
-      //return a/b/b;
-    //}
+    if ( x == y) {
+      return a.divide(b).divide(b);
+    }
     BigInteger c = computePermutation(BigInteger.valueOf(y));
     return a.divide(b).divide(c);
   }
